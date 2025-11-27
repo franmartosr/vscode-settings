@@ -1,0 +1,46 @@
+{
+	"servers": {
+		"chrome-devtools": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"chrome-devtools-mcp@latest"
+			],
+			"type": "stdio"
+		},
+		"filesystem": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"D:\\GIT"
+			],
+			"type": "stdio"
+		},
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"type": "stdio"
+		},
+		"weather": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"tsx",
+				"D:\\GIT\\MyFirstMCP\\main.ts"
+			],
+			"type": "stdio"
+		},
+		"console-ninja": {
+			"command": "powershell.exe",
+			"args": [
+				"node",
+				"$Env:USERPROFILE/.console-ninja/mcp/"
+			],
+			"type": "stdio"
+		}
+	},
+	"inputs": []
+}
